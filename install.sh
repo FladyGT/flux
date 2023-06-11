@@ -5,14 +5,14 @@ ENDCOLOR="\e[0m"
 clear
 echo -e "${GREEN}Installing Proxy...${ENDCOLOR}"
 sleep 1
-if [ -f "flux_linux" ]; then
+if [ -f "proxy_linux" ]; then
     echo -e "${RED}Deleting old proxy...${ENDCOLOR}"
-    rm flux_linux
+    rm proxy_linux
     sleep 1
     echo -e "${GREEN}Updating proxy...${ENDCOLOR}"
 fi
-wget -q https://github.com/FladyGT/flux/flux_linux
+wget -q https://github.com/FladyGT/flux/proxy_linux
 sleep 1
 echo -e "${GREEN}Proxy Installed${ENDCOLOR}"
-echo -e "${GREEN}Execute proxy with this command: ./flux_linux${ENDCOLOR}"
-chmod +x flux_linux
+echo -e "${GREEN}Execute proxy with this command: ./proxy_linux${ENDCOLOR}"
+chmod +x proxy_linux
