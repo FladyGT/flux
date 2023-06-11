@@ -11,7 +11,7 @@ if [ -f "proxy_linux" ]; then
     sleep 1
     echo -e "${GREEN}Updating proxy...${ENDCOLOR}"
 fi
-wget -q https://github.com/FladyGT/flux/proxy_linux
+wget -q https://github.com/FladyGT/flux/raw/main/proxy_linux
 sleep 1
 echo -e "${GREEN}Proxy Installed${ENDCOLOR}"
 echo -e "${GREEN}Execute proxy with this command: ./proxy_linux${ENDCOLOR}"
